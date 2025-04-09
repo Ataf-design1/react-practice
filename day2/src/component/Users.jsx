@@ -6,6 +6,7 @@ const Users = () => {
   const [last, setLast] = useState("");
   const [db, setdb] = useState([]);
   const [editId, setEditId] = useState(null);
+  const [search , setSearch] = useState("")
 
   const handelAdd = async () => {
     let userData = { first, last };
@@ -30,10 +31,11 @@ const Users = () => {
         "https://newreactproject-5eb97-default-rtdb.asia-southeast1.firebasedatabase.app/day2users.json"
       );
       let fetcheduser = [];
+      console.log(res.data)
       for (let key in res.data) {
         fetcheduser.push({ id: key, ...res.data[key] });
         setdb(fetcheduser);
-        // console.log(db);
+        console.log(db);
       }
     } catch (error) {}
   };
@@ -76,8 +78,13 @@ const Users = () => {
       console.log(error);
     }
   }
+
+  const filterdUser = db.filter((user)=>(
+    `${user.first} ${user.last}`.toLowerCase().includes(search.toLowerCase())
+  ))
   return (
     <div>
+      <input value={search} placeholder="Search here....."  onChange={(e)=>setSearch(e.target.value)}/>
       <input
         value={first}
         type="text"
@@ -97,7 +104,7 @@ const Users = () => {
       {/* ui part */}
 
       <ul>
-        {db.map((user) => (
+        {filterdUser.map((user) => (
           <li key={user.id}>
             {user.first}
             {user.last}
