@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "Bluetooth Speaker",
+      "price": 49.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "title": "Wireless Headphones",
+      "price": 89.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "title": "Smart Watch",
+      "price": 119.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "title": "Gaming Mouse",
+      "price": 29.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "title": "Mechanical Keyboard",
+      "price": 79.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 6,
+      "title": "Laptop Stand",
+      "price": 35.00,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 7,
+      "title": "Webcam 1080p",
+      "price": 55.49,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 8,
+      "title": "Portable SSD 1TB",
+      "price": 139.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 9,
+      "title": "Smart LED Bulb",
+      "price": 19.99,
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 10,
+      "title": "USB-C Hub",
+      "price": 45.00,
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+  
