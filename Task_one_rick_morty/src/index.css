@@ -28,6 +28,7 @@
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
+    min-width: 100VW;
   }
   
   h1 {
