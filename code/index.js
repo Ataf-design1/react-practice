@@ -46,7 +46,7 @@
 // let res = generateKeyFromEmail("abc12@domain.com")
 // console.log(res)
 
-function find(str) {
+function generateKeyFromEmail(str) {
   if (!str.split("").includes("@")) {
     console.log("Invalid Email Address");
     return;
@@ -87,4 +87,4 @@ function find(str) {
   ans = ans.split("").reverse().join("");
   console.log(ans);
 }
-find("abc12@domain.com");
+generateKeyFromEmail("paayush1209@gmail.com");
