@@ -7,10 +7,10 @@ import LearningState from './components/LearningState'
 const App = () => {
   return (
     <div>
-      {/* <Data/> */}
+      <Data/>
       {/* <TimerApp/> */}
       {/* <Datatwo/> */}
-      <LearningState/>
+      {/* <LearningState/> */}
     </div>
   )
 }
