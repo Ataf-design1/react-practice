@@ -5,6 +5,9 @@ import Userprofile from './component3/Userprofile'
 import LoginMessage from './component4/LoginMessage'
 import Focus from './component5/Focus'
 import Memo from './component5/Memo'
+import App6 from './component6/App6'
+import FeedbackFormManager from './component7/FeedbackFormManager'
+import Ashish from './component7/Ashish'
 
 const App = () => {
   return (
@@ -14,7 +17,11 @@ const App = () => {
       {/* <Userprofile/> */}
       {/* <LoginMessage/> */}
       {/* <Focus/> */}
-      <Memo/>
+      {/* <Memo/> */}
+      {/* <App6/> */}
+      {/* <FeedbackFormManager/> */}
+      {/* <Ashish/> */}
+      
     </div>
   )
 }
