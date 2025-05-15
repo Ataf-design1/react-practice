@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 
-const MiniEcom = () => {
+const 
+MiniEcom = () => {
   let [products, setproducts] = useState([]);
   let [currentpage, setcurrentpage] = useState(1);
   let [searchitem, setSearchitem] = useState("");
+  let [input, setInput] = useState("");
   const calling_api = () => {
     fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
@@ -13,20 +15,38 @@ const MiniEcom = () => {
     calling_api();
   }, []);
 
+  useEffect(() => {
+    let id = setTimeout(() => {
+      setSearchitem(input);
+    }, 2000);
+    return () => {
+      clearTimeout(id);
+    };
+  }, [input]);
 
-  let itemttobesearch = products.filter((item)=>item.title.toLowerCase().includes(searchitem.toLowerCase()))
+  let itemttobesearch = products.filter((item) =>
+    item.title.toLowerCase().includes(searchitem.toLowerCase())
+  );
+  console.log("itemtobesearch",itemttobesearch)
 
-  let itemperPage = 3;
+  let itemperPage = 6;
   let lastpage = currentpage * itemperPage;
   let firstpage = lastpage - itemperPage;
-  let paginateddata = itemttobesearch.slice(firstpage, lastpage);
+  let paginateddata = itemttobesearch.slice(firstpage, lastpage+1);
+  console.log("paginateddata" , paginateddata)
 
   return (
     <>
-      <input
+      {/* <input
         type="text"
         placeholder="Search Product Here...🔍"
         onChange={(e) => setSearchitem(e.target.value)}
+      /> */}
+
+      <input
+        type="text"
+        placeholder="search Input"
+        onChange={(e) => setInput(e.target.value)}
       />
 
       {paginateddata.map((product) => (
@@ -47,7 +67,6 @@ const MiniEcom = () => {
           />
           <p>{product.price}</p>
           <p>{product.category}</p>
-          
         </div>
       ))}
 

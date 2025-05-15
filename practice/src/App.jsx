@@ -18,7 +18,7 @@ const App = () => {
       {/* <LoginMessage/> */}
       {/* <Focus/> */}
       {/* <Memo/> */}
-      {/* <App6/> */}
+      <App6/>
       {/* <FeedbackFormManager/> */}
       {/* <Ashish/> */}
       
