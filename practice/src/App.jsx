@@ -8,6 +8,7 @@ import Memo from './component5/Memo'
 import App6 from './component6/App6'
 import FeedbackFormManager from './component7/FeedbackFormManager'
 import Ashish from './component7/Ashish'
+import App9 from './component9/App9'
 
 const App = () => {
   return (
@@ -18,10 +19,10 @@ const App = () => {
       {/* <LoginMessage/> */}
       {/* <Focus/> */}
       {/* <Memo/> */}
-      <App6/>
+      {/* <App6/> */}
       {/* <FeedbackFormManager/> */}
       {/* <Ashish/> */}
-      
+      <App9/>
     </div>
   )
 }

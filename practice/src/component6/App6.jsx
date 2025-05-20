@@ -6,7 +6,7 @@ const App6 = () => {
   return (
     <div>
         <MiniEcom/>
-        <PaginationPractice/>
+        {/* <PaginationPractice/> */}
     </div>
   )
 }
